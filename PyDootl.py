@@ -55,7 +55,7 @@ def Math(eqChoice):
 def wordCounting ():
         import re
         from collections import Counter
-        f=open('C:\WebProjects\Git-One\MadCamp.txt', 'r')
+        f=open('.\MadCamp.txt', 'r')
         passage = f.read()
         words = re.findall(r'\w+', passage)
         cap_words = [word.upper() for word in words]
@@ -70,7 +70,7 @@ def wordCountingLoop():
         actionWordNum = 0
         personWordNum = 0
         thingWordNum = 0
-        file=open('C:\WebProjects\Git-One\MadCamp.txt', 'r')
+        file=open('.\MadCamp.txt', 'r')
         wordCount={"actionWord":0, "personWord":0,"thingWord":0}
         for word in file.read().split():
             if word in wordCount: wordCount[word] += 1
@@ -86,7 +86,7 @@ def wordCountingLoop():
 
 
 def wordCounterfrmt():
-        file=open('C:\WebProjects\Git-One\MadCamp.txt', 'r', encoding="utf-8-sig")
+        file=open('.\MadCamp.txt', 'r', encoding="utf-8-sig")
         from collections import Counter
         wordcount = Counter(file.read().split())
         for item in wordcount.items(): print("{}\t{}".format(*item))
@@ -94,8 +94,8 @@ def wordCounterfrmt():
         return
 
 def replaceWords():
-        f1 = open('C:\WebProjects\Git-One\MadCamp.txt', 'r')
-        f2 = open('C:\WebProjects\Git-One\MadCamp-tmp.txt', 'w')
+        f1 = open('.\MadCamp.txt', 'r')
+        f2 = open('.\MadCamp-tmp.txt', 'w')
         i=-1
         rtext = ""
         
