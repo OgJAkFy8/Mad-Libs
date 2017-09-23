@@ -8,20 +8,9 @@ txtfile = open('.\campletter1.txt','r')
 Message = txtfile.read()
 txtfile.close()
 
-
-# Simple Replace
-actionWord = ["hit", "climb","run"]
-personWord = ["bar tender","baseball Ump","trash man"]
-thingWord = ["boat"]
-
-##printMess = 'We are having the best time in %s camp.  The %s likes to %s a pinecone.'%(personWord[randint(0,len(personWord))],personWord[randint(0,len(personWord))],actionWord[randint(0,len(actionWord))])
-##print(printMess)
 print(4 * '\n')
 
-
 # User input version
-# Start with the same text
-#Message = 'We are having the best time in thingWord camp.  The personWord likes to actionWord a pinecone.'
 printMess = Message.split()
 printMes2 = Message
 
