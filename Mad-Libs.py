@@ -3,8 +3,13 @@ from collections import Counter
 import re
 import string
 
+# Define the lists
+actionWord = [""]
+personWord = [""]
+thingWord = [""]
+
 # Open the file
-txtfile = open('.\campletter1.txt','r')
+txtfile = open('campletter1.txt','r')
 Message = txtfile.read()
 txtfile.close()
 
@@ -28,9 +33,9 @@ actionWord.clear()
 personWord.clear()
 thingWord.clear()
 
-print(blue)
-print(red)
-print(green)
+# print(blue)
+# print(red)
+# print(green)
 
 # Enter the words
 if green != None:
