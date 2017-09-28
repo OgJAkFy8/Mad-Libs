@@ -16,11 +16,12 @@ thingWord = [""]
 blankfiles = os.listdir('blank')
 i=1
 for b_file in blankfiles:
-    print(i+". "+b_file)
-    i=+i
+    #print(i+". "+b_file)
+    print(str(i)+'. '+b_file)
+    i=i+1
 txtfilenum =input("Enter number of the template: ")
 
-txtfile = open('blank/'+blankfiles[txtfilenum],'r')
+txtfile = open('blank/'+blankfiles[int(txtfilenum)],'r')
 Message = txtfile.read()
 txtfile.close()
 
@@ -84,4 +85,4 @@ f.close()
 
 # print the new message
 print(printMes2)
-print('finishedLetters/'+filename+'_'+timestr+'.txt')
+print('finished/'+filename+'_'+timestr+'.txt')
