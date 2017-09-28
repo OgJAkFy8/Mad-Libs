@@ -2,14 +2,25 @@ from random import *
 from collections import Counter
 import re
 import string
+import time
+import os
+
 
 # Define the lists
 actionWord = [""]
 personWord = [""]
 thingWord = [""]
 
+
 # Open the file
-txtfile = open('campletter1.txt','r')
+blankfiles = os.listdir('blank')
+i=1
+for b_file in blankfiles:
+    print(i+". "+b_file)
+    i=+i
+txtfilenum =input("Enter number of the template: ")
+
+txtfile = open('blank/'+blankfiles[txtfilenum],'r')
 Message = txtfile.read()
 txtfile.close()
 
@@ -18,6 +29,11 @@ print(4 * '\n')
 # User input version
 printMess = Message.split()
 printMes2 = Message
+
+# File Name
+filename = printMess[0]+"-"+printMess[1]
+printMess.remove(printMess[0])
+printMess.remove(printMess[0])
 
 # Count the words in the text
 cnt = Counter()
@@ -56,12 +72,16 @@ if red  != None:
         o = personWord[i]
         printMes2 = printMes2.replace('personWord', o,1)
 
-print(4 * '\n')
+#print(4 * '\n')
 
-
-f = open('campletter-home.txt', 'w')
+# Create output file and write
+# File Name
+timestr = time.strftime("%d%M%S")
+#print (filename)
+f = open('finishedLetters/'+filename+'_'+timestr+'.txt', 'w')
 f.write(printMes2)
 f.close()
 
 # print the new message
 print(printMes2)
+print('finishedLetters/'+filename+'_'+timestr+'.txt')
