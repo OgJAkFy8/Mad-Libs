@@ -58,5 +58,10 @@ if red  != None:
 
 print(4 * '\n')
 
+
+f = open('campletter-home.txt', 'w')
+f.write(printMes2)
+f.close()
+
 # print the new message
 print(printMes2)
