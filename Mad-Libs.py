@@ -79,7 +79,7 @@ if red  != None:
 # File Name
 timestr = time.strftime("%d%M%S")
 #print (filename)
-f = open('finishedLetters/'+filename+'_'+timestr+'.txt', 'w')
+f = open('finished/'+filename+'_'+timestr+'.txt', 'w')
 f.write(printMes2)
 f.close()
 
