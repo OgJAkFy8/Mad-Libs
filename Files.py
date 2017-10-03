@@ -11,19 +11,26 @@ def file_blank():
         print(str(i)+'. '+b_file)
         i=i+1
     txtfilenum =input("Enter number of the template: ")
-    txtfile = open('blank/'+blankfiles[int(txtfilenum)],'r')
+    txtfile = open('blank/'+blankfiles[int(txtfilenum)-1],'r')
     Message = txtfile.read()
     txtfile.close()
+    print(Message)
+    lst_letter = Message.split()
+    print(lst_letter)
     return Message
 
 
 # User input version
 def file_name(Message):
-    printMess = Message.split()
-    # File Name
-    filename = printMess[0]+"-"+printMess[1]
-    printMess.remove(printMess[0])
-    printMess.remove(printMess[0])
+    # Convert message to working variables
+    lst_letter = Message#.split()
+
+# File Name
+    filename = lst_letter[0]+"-"+lst_letter[1]
+    del lst_letter[0]
+    del lst_letter[0]
+
+    str_letter = ' '.join(map(str, lst_letter))
     return filename
 
 

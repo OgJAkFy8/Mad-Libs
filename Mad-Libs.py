@@ -1,15 +1,17 @@
 from random import *
 from collections import Counter
 import re, string, time, os
-import Files
+from Files import *
 
 # Assignments
 key = set("$")
 i=1
-
+Message = []
+filename = "t"
 # Open the file
-Files.file_blank
-
+file_blank()
+file_name(Message)
+print(filename)
 # print('\n')
 # blankfiles = os.listdir('blank')
 # for b_file in blankfiles:
