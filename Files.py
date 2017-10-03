@@ -3,7 +3,7 @@ import re, string, time, os
 
 
 # Open the file
-def file_blank:
+def file_blank():
     blankfiles = os.listdir('blank')
     i=1
     for b_file in blankfiles:
