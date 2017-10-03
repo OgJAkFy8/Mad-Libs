@@ -1,6 +1,7 @@
 from random import *
 from collections import Counter
 import re, string, time, os
+import . files
 
 
 # Assignments
@@ -9,19 +10,20 @@ i=1
 
 
 # Open the file
-print('\n')
-blankfiles = os.listdir('blank')
-for b_file in blankfiles:
-    #print(i+". "+b_file)
-    print(str(i)+'. '+b_file)
-    i=i+1
-txtfilenum =input("Enter number of the template: ")
+files.file_blank
+# print('\n')
+# blankfiles = os.listdir('blank')
+# for b_file in blankfiles:
+    # #print(i+". "+b_file)
+    # print(str(i)+'. '+b_file)
+    # i=i+1
+# txtfilenum =input("Enter number of the template: ")
 
-txtfile = open('blank/'+blankfiles[int(txtfilenum)-1],'r')
-Message = txtfile.read()
-txtfile.close()
+# txtfile = open('blank/'+blankfiles[int(txtfilenum)-1],'r')
+# Message = txtfile.read()
+# txtfile.close()
 
-print(2 * '\n')
+# print(2 * '\n')
 
 # Convert message to working variables
 lst_letter = Message.split()
