@@ -10,7 +10,7 @@ i=1
 
 
 # Open the file
-files.file_blank
+Files.file_blank
 # print('\n')
 # blankfiles = os.listdir('blank')
 # for b_file in blankfiles:
