@@ -1,7 +1,7 @@
 from random import *
 from collections import Counter
 import re, string, time, os
-import . files
+import Files
 
 
 # Assignments
