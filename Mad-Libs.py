@@ -18,7 +18,7 @@ for b_file in blankfiles:
     i=i+1
 txtfilenum =input("Enter number of the template: ")
 
-txtfile = open('blank/'+blankfiles[int(txtfilenum)],'r')
+txtfile = open('blank/'+blankfiles[int(txtfilenum)-1],'r')
 Message = txtfile.read()
 txtfile.close()
 
