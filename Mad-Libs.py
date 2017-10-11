@@ -6,12 +6,10 @@ from Files import *
 # Assignments
 key = set("$")
 i=1
-Message = []
+Message = lst_letter = []
 filename = "t"
 # Open the file
-file_blank()
-file_name(Message)
-print(filename)
+file_work()
 # print('\n')
 # blankfiles = os.listdir('blank')
 # for b_file in blankfiles:
@@ -27,14 +25,14 @@ print(filename)
 # print(2 * '\n')
 
 # Convert message to working variables
-lst_letter = Message.split()
+##lst_letter = Message.split()
 
 # File Name
-filename = lst_letter[0]+"-"+lst_letter[1]
-del lst_letter[0]
-del lst_letter[0]
-
-str_letter = ' '.join(map(str, lst_letter))
+##ilename = lst_letter[0]+"-"+lst_letter[1]
+##del lst_letter[0]
+##del lst_letter[0]
+##
+##str_letter = ' '.join(map(str, lst_letter))
 
 
 # Find the words to replace.

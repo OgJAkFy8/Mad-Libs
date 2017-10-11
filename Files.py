@@ -16,22 +16,42 @@ def file_blank():
     txtfile.close()
     print(Message)
     lst_letter = Message.split()
-    print(lst_letter)
-    return Message
+    #print(lst_letter)
+    return lst_letter
 
 
 # User input version
-def file_name(Message):
-    # Convert message to working variables
-    lst_letter = Message#.split()
+def file_work():
+    # Assignments
+    key = set("$")
+    i=1
+    Message = lst_letter = []
+    filename = "t"
+    
+    blankfiles = os.listdir('blank')
+    for b_file in blankfiles:
+        #print(i+". "+b_file)
+        print(str(i)+'. '+b_file)
+        i=i+1
+    txtfilenum =input("Enter number of the template: ")
 
-# File Name
+    txtfile = open('blank/'+blankfiles[int(txtfilenum)-1],'r')
+    Message = txtfile.read()
+    txtfile.close()
+
+    print(2 * '\n')
+
+    #Convert message to working variables
+    lst_letter = Message.split()
+
+    # File Name
     filename = lst_letter[0]+"-"+lst_letter[1]
     del lst_letter[0]
     del lst_letter[0]
-
+    ##
     str_letter = ' '.join(map(str, lst_letter))
-    return filename
+
+    return str_letter, filename
 
 
 
