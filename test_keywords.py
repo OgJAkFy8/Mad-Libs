@@ -6,23 +6,22 @@ import time
 import os
 
 
+str_letter = 'This is a $VERB of the $noun system'
+lst_letter = str_letter.split()
+del lst_letter[0]
+del lst_letter[0]
 
 
-thingWord = ["$noun","noun","$VERB"]
+str_letter = ' '.join(map(str, lst_letter))
 
 key = set("$")
 
-cnt = Counter()
 
-for word in thingWord:
-    cnt[word] += 1
-
-
-for word in thingWord:
+for word in lst_letter:
     if key & set(word):
-        r=word.split("$")
-        print(r[1])
-        
+        word_key=word.split("$")
+        word_replacement=(input("Enter a/an "+word_key[1]+": "))
+        str_letter = str_letter.replace(word, word_replacement,1)
 
-   
-blue = cnt.get("$")
+print(str_letter)
+
