@@ -10,24 +10,26 @@ sign = "$"
 i=1
 k=0
 
+# Clear the screen
+print(30 *'\n')
+
 # Open the file
-print('\n')
 blankfiles = os.listdir('blank')
 for b_file in blankfiles:
     #print(i+". "+b_file)
     print(str(i)+'. '+b_file)
     i=i+1
-txtfilenum =input("Enter number of the template: ")
 
+txtfilenum =input("Enter number of the template: ")
 txtfile = open('blank/'+blankfiles[int(txtfilenum)-1],'r')
 Message = txtfile.read()
 txtfile.close()
 
 # Count the words in the text
 k = (Message.count('$')-0)
-#print("K "+str(k))
     
-print(2 * '\n')
+# Clear the screen
+print(30 *'\n')
 
 # Convert message to working variables
 lst_letter = Message.split()
@@ -57,6 +59,10 @@ timestr = time.strftime("%d%M%S")
 f = open('finished/'+filename+'_'+timestr+'.txt', 'w')
 f.write(str_letter)
 f.close()
+
+
+# Clear the screen
+print(30 *'\n')
 
 # Print status bar
 for i in range(5):
