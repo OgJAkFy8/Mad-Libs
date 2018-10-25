@@ -3,6 +3,16 @@ from collections import Counter
 import re, string, time, os, sys
 from time import sleep
 
+try:
+  import Tkinter              # Python 2
+  import ttk
+except ImportError:
+  import tkinter as Tkinter   # Python 3
+  import tkinter.ttk as ttk
+  import tkinter.messagebox as messagebox
+  import tkinter.simpledialog as simpledialog
+  from tkinter import *
+  import tkinter as tk
 
 # Assignments
 key = set("$")
@@ -60,7 +70,6 @@ f = open('finished/'+filename+'_'+timestr+'.txt', 'w')
 f.write(str_letter)
 f.close()
 
-
 # Clear the screen
 print(30 *'\n')
 
@@ -70,6 +79,16 @@ for i in range(5):
     print((5-i) *'\r*')
     
 # print the new message
+
+root = tk.Tk()
+#root.withdraw()
+##root.geometry("100x100")
+##root.deiconify()
+messagebox.showinfo(filename, str_letter)
+simpledialog(filename, str_letter)
+
+#mainloop()
+
 print('\n')
 print(str_letter)
 print('\n')
