@@ -1,6 +1,12 @@
-## Welcome to GitHub Pages
+## Welcome to Mad-Libs in Python
 
-You can use the [editor on GitHub](https://github.com/OgJAkFy8/Mad-Libs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+When I started this years ago, I had ideas of the folder structure that does not seem to be figured out by me at this time.
+
+I am going to put the final completed version in the root.  The rest will be under the testing or working folders.
+
+This is a working program
+".\Mad-Libs\Final-Versions\Mad-Libs-string.py"
+".\Mad-Libs\Final-Versions\Mad-Libs-simple.py"
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
