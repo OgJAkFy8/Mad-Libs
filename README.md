@@ -2,11 +2,31 @@
 
 When I started this years ago, I had ideas of the folder structure that does not seem to be figured out by me at this time.
 
-I am going to put the final completed version in the root.  The rest will be under the testing or working folders.
+## How to use it
+1. Open or run the start_MadLibs.py file. 
+1. Answer the questions. 
+1. Read the output file. 
 
-This is a working program
-".\Mad-Libs\Final-Versions\Mad-Libs-string.py"
-".\Mad-Libs\Final-Versions\Mad-Libs-simple.py"
+## 
+
+## Folder Structure
+- Blank-Letters - The program started from the idea of someone writing home from summer camp.  The "Letters" are the templates that need will be modified by the program when run. 
+- Examples - A place for the earlier programs that still work. 
+- Incomplete - This is where the older programs went to die. 
+- modules - The current program was built using modules.  This mostly due to the way I was building it.  I started using other parts of the older programs and put them into functions (def) which are called through the main program 'start_MadLibs.py' .  
+- Outputs - This folder holds the completed "Letters".  It is also in the .gitignore file, so that it is not replicated. 
+- .gitignore - Prevents the Output files from being replicated. 
+- README.md - This file. 
+- start_MadLibs.py - The main "Mad-Libs" program. 
+
+
+
+
+
+
+
+
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
@@ -16,9 +36,6 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 ```markdown
 Syntax highlighted code block
-
-# Header 1
-## Header 2
 ### Header 3
 
 - Bulleted
