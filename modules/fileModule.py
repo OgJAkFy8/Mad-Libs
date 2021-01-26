@@ -86,5 +86,5 @@ def Write_Letter(dir_path,filename,message):
     f.write(message)
     f.close()
     fin_msg = (file_path)
-    return fin_msg
+    return fin_msg, message
 
