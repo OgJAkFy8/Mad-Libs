@@ -74,14 +74,14 @@ def wordCountingLoop():
         wordCount={"actionWord":0, "personWord":0,"thingWord":0}
         for word in file.read().split():
             if word in wordCount: wordCount[word] += 1
-            print (word,wordCount)
+            #print (word,wordCount)
         file.close();
         actionWordNum = wordCount["actionWord"]
         personWordNum = wordCount["personWord"]
         thingWordNum = wordCount["thingWord"]
         #print("action Num = ",actionWordNum)
         #print("person Num = ",personWordNum)
-        print(actionWordNum,personWordNum)
+        #print(actionWordNum,personWordNum)
         return(actionWordNum,personWordNum,thingWordNum)
 
 
