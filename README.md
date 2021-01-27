@@ -7,23 +7,34 @@ When I started this years ago, I had ideas of the folder structure that does not
 1. Answer the questions. 
 1. Read the output file. 
 
-## 
+## Root Folder
+**./Mad-Libs** - 
 
-## Folder Structure
-- **Blank-Letters** - The program started from the idea of someone writing home from summer camp.  The "Letters" are the templates that need will be modified by the program when run. 
-- **Examples** - A place for the earlier programs that still work. 
-- **Incomplete** - This is where the older programs went to die. 
-- **modules** - The current program was built using modules.  This mostly due to the way I was building it.  I started using other parts of the older programs and put them into functions (def) which are called through the main program 'start_MadLibs.py' .  
-- **Outputs** - This folder holds the completed "Letters".  It is also in the .gitignore file, so that it is not replicated. 
-- **.gitignore** - Prevents the Output files from being replicated. 
-- **README.md** - This file. 
-- **start_MadLibs.py** - The main "Mad-Libs" program. 
+## Root Folder Structure
+- **./Blank-Letters** - The program started from the idea of someone writing home from summer camp.  The "Letters" are the templates that need will be modified by the program when run. 
+- **./Examples** - A place for the earlier programs that still work. 
+- **./Incomplete** - This is where the older programs went to die. 
+- **./modules** - The current program was built using modules.  This mostly due to the way I was building it.  I started using other parts of the older programs and put them into functions (def) which are called through the main program 'start_MadLibs.py' .  
+- **./Outputs** - This folder holds the completed "Letters".  It is also in the .gitignore file, so that it is not replicated. 
 
+## Root Files
+- **./.gitignore** - Prevents the Output files from being replicated. 
+- **./README.md** - This file. 
+- **./start_MadLibs.py** - The main "Mad-Libs" program. 
 
-
-
-
-
+## Program Files
+- **./start_MadLibs.py** - Starts the program.  
+- Calls the following modules: 
+    - import modules.fileModule as fm 
+    - import modules.madregexModule as ml 
+    - import tkinter as tk 
+    - from tkinter import messagebox 
+	
+- **./modules/fileModule.py** - 
+- **./modules/madregexModule.py** - 
+- **./Blank-Letters/ShortLetter.txt
+- **./Blank-Letters/campletter.txt
+- **./Outputs/Letter-Home_235036.txt**
 
 
 
