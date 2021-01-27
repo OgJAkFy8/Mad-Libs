@@ -24,12 +24,12 @@ When I started this years ago, I had ideas of the folder structure that does not
 
 ## Program Files
 - **./start_MadLibs.py** - Starts the program.  
-  - Calls the following modules: 
+  - Calls the following modules: ```
     - import modules.fileModule as fm 
     - import modules.madregexModule as ml 
     - import tkinter as tk 
     - from tkinter import messagebox 
-	
+	```
 - **./modules/fileModule.py** - 
 - **./modules/madregexModule.py** - 
 - **./Blank-Letters/ShortLetter.txt
