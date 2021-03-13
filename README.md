@@ -1,6 +1,5 @@
 ## Welcome to Mad-Libs in Python
 This was a project that I started with my nephews a number of years ago to teach them how to program in Python, because they were all using Minecraft.  I also wanted to relearn Python (Orignially learned with version 2.3 or something.), specifically version 3.x.  This current version has been written using Python 3.9 on a windows 10 machine.
-When I started this years ago, I had ideas of the folder structure that does not seem to make sense to me at this time.  So that is going to have to be cleaned up.  
 
 ## How to use it
 1. Open or run the start_MadLibs.py file. 
@@ -13,7 +12,8 @@ When I started this years ago, I had ideas of the folder structure that does not
 ## Root Folder Structure
 - **./Blank-Letters** - The program started from the idea of someone writing home from summer camp.  The "Letters" are the templates that need will be modified by the program when run. 
 - **./Examples** - A place for the earlier programs that still work. 
-- **./Incomplete** - This is where the older programs went to die. 
+- **./Sketchpad** - For notes, temp work and other items, that are not required for the program to run.
+- **./Sketchpad/Incomplete** - This is where the older programs went to die. 
 - **./modules** - The current program was built using modules.  This mostly due to the way I was building it.  I started using other parts of the older programs and put them into functions (def) which are called through the main program 'start_MadLibs.py' .  
 - **./Outputs** - This folder holds the completed "Letters".  It is also in the .gitignore file, so that it is not replicated. 
 
@@ -29,6 +29,7 @@ When I started this years ago, I had ideas of the folder structure that does not
     - import modules.madregexModule as ml 
     - import tkinter as tk 
     - from tkinter import messagebox 
+
 - **./modules/fileModule.py**
   - The file module contains: 
     - Select_Letter 
@@ -81,12 +82,8 @@ Lib_adj(ective) # A word that discribs a noun: _blue_ car
 #### Output
 - **./Outputs/Letter-Home_235036.txt** - An example of what one of the outlook files will be named.  
 
-
-
-
-
-Future Features
+#### Future Features
 1. The user will be able to see the _TYPE_ of document they are working on.  To help tailor their responses. In otherwords, when you run the program you will have a base idea of what you are working on. 
-1. Currently the user selects the _Letter_ they want to work on.  This will be made random.
+1. Currently the user selects the _Letter_ they want to work on.  This might be made random.
 
 
