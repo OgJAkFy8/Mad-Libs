@@ -41,7 +41,7 @@ When I started this years ago, I had ideas of the folder structure that does not
     - modifyString - This is where the "Magic" happens.  It simply uses a RegEx (Regular Expression) to look for the _key words_ in the Blank-Letter files.
     ```
     import re
-    MadEx = re.compile(r"(?i)(?:Lib)\_{1,3}(verb|person|people|place|thing|noun(s)*|adj([ective])*)") 
+    MadEx = re.compile(r"(?i)(?:Lib)\_{1,3}(verb|person|people|place|thing|job|noun(s)*|adj([ective])*)")
     inputItem = MadEx.search(MadString).group(1)
     MadEx.sub(InPut,MadString,1)
     ```
@@ -58,8 +58,9 @@ The input files are just txt files that have been modified to have some words re
 **_Keywords_** - Keywords are the words that are seached for during program execution.   
 ``` 
 Lib_verb        # Action word: Jump, bet
-Lib_person      # Single person: Cook, umpire
+Lib_person      # Proper name: Johnny, Stevie, Roland
 Lib_people      # Multiple people: Foosball Team, passengers
+Lib_job         # Cook, umpire
 Lib_place       # Place: bus stop, LA
 Lib_thing       # Thing: moon
 Lib_noun(s)     # A person, place or thing - This may make way for the above
@@ -69,7 +70,7 @@ Lib_adj(ective) # A word that discribs a noun: _blue_ car
 
 #### Building the Template files
 1. On the first line of the document, type the title of the paragraph/letter.  _See **FUTURE FEATURES** below._
-**EXAMPLE** _Summer Camp Diary_
+**EXAMPLE** _Title:Summer Camp Diary_
 1. Find a sentence or paragraph that you like. 
 1. Starting on the second line paste it into a txt file. 
 1. Replace the different words with the above _keywords_. 
@@ -89,34 +90,3 @@ Future Features
 1. Currently the user selects the _Letter_ they want to work on.  This will be made random.
 
 
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/OgJAkFy8/Mad-Libs/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
