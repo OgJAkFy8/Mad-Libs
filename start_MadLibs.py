@@ -6,8 +6,8 @@ from tkinter import messagebox
 
 # BEGIN
 # Variables
-stationaryPad = 'c:\\Users\\erika\\Documents\\GitHub\\Mad-Libs\\Blank-Letters'
-mailBox = 'C:\\Users\\erika\\Documents\\GitHub\\Mad-Libs\\Outputs'
+stationaryPad = 'Blank-Letters'
+mailBox = 'Outputs'
 
 
 # Pop-up window for viewing the output
