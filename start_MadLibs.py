@@ -1,9 +1,16 @@
-import modules.fileModule as fm
-import modules.madregexModule as ml
+from modules.fileModule import Assemble_Letter, Select_Letter, Write_Letter
+from modules.madregexModule import modifyString
 import tkinter as tk
 from tkinter import messagebox
 
 
+# BEGIN
+# Variables
+stationaryPad = 'c:\\Users\\erika\\Documents\\GitHub\\Mad-Libs\\Blank-Letters'
+mailBox = 'C:\\Users\\erika\\Documents\\GitHub\\Mad-Libs\\Outputs'
+
+
+# Pop-up window for viewing the output
 def popup(message, title=None):
     root = tk.Tk()
     root.withdraw()
@@ -11,9 +18,12 @@ def popup(message, title=None):
     messagebox.showinfo(title, message, parent=root)
     root.destroy()
 
-file_path,filename = fm.Select_Letter('c:\\Users\\erika\\Documents\\GitHub\\Mad-Libs\\Blank-Letters')
-BlankLetter, filename = fm.Assemble_Letter(file_path,filename)
-Letter = ml.modifyString(BlankLetter)
-MsgPath, Message = fm.Write_Letter('C:\\Users\\erika\Documents\\GitHub\\Mad-Libs\\Outputs',filename,Letter)
 
+# PROCESS
+file_path, filename = Select_Letter(stationaryPad)
+BlankLetter, filename = Assemble_Letter(file_path, filename)
+Letter = modifyString(BlankLetter)
+MsgPath, Message = Write_Letter(mailBox, filename, Letter)
+
+# END
 popup(Message, MsgPath)

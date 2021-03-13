@@ -1,2 +1,2 @@
-
-*.txt
+# Ignore Outputs folder
+Outputs
