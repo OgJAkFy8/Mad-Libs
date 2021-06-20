@@ -3,7 +3,7 @@ This was a project that I started with my nephews a number of years ago to teach
 
 ## How to get it
 - Main page [link](https://github.com/OgJAkFy8/Mad-Libs)
-- Download the current version from [HERE](https://github.com/OgJAkFy8/Mad-Libs/releases/tag/v2.0)
+- Download the current version from [HERE](https://github.com/OgJAkFy8/Mad-Libs/releases/)
 
 ## How to use it
 1. Open or run the start_MadLibs.py file. 
