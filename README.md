@@ -1,6 +1,10 @@
 ## Welcome to Mad-Libs in Python
 This was a project that I started with my nephews a number of years ago to teach them how to program in Python, because they were all using Minecraft.  I also wanted to relearn Python (Orignially learned with version 2.3 or something.), specifically version 3.x.  This current version has been written using Python 3.9 on a windows 10 machine.
 
+## How to get it
+- Main page [link](https://github.com/OgJAkFy8/Mad-Libs)
+- Download the current version from [HERE](https://github.com/OgJAkFy8/Mad-Libs/releases/)
+
 ## How to use it
 1. Open or run the start_MadLibs.py file. 
 1. Answer the questions. 
