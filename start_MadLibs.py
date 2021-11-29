@@ -21,9 +21,23 @@ def popup(message, title=None):
 
 # PROCESS
 file_path, filename = Select_Letter(stationaryPad)
-BlankLetter, filename = Assemble_Letter(file_path, filename)
-Letter = modifyString(BlankLetter)
-MsgPath, Message = Write_Letter(mailBox, filename, Letter)
 
-# END
-popup(Message, MsgPath)
+#print(filename)
+#print(file_path)
+if(file_path != 'Blank-Letters/Keywords'):
+    BlankLetter, filename = Assemble_Letter(file_path, filename)
+    Letter = modifyString(BlankLetter)
+    MsgPath, Message = Write_Letter(mailBox, filename, Letter)
+    # END
+    popup(Message, MsgPath)
+
+else:
+    #print('else')
+    f = open(file_path, 'r')
+    t = f.read().split('\n')
+    for i in range(0, (len(t))):
+        print(t[i])
+
+
+    
+

@@ -8,7 +8,7 @@ def modifyString(MadString):
 
     propername = False
 
-    MadEx = re.compile(r"(?i)(?:Lib)\_{1,3}(verb|person|people|place|thing|job|noun(s)*|adj([ective])*)")
+    MadEx = re.compile(r"(?i)(?:Lib)\_{1,3}(verb(past)*|person|people|place|thing|job|date|number|animal(s)*|noun(s)*|adj([ective])*)")
 
     while len(MadEx.findall(MadString)) != 0:
         a = 'a'
@@ -19,6 +19,10 @@ def modifyString(MadString):
             a = 'an'
         if bool(re.match('nouns', inputItem, re.I)):
             inputItem = 'plural noun'
+        if bool(re.match('animals', inputItem, re.I)):
+            inputItem = 'plural animal'
+        if bool(re.match('verbpast', inputItem, re.I)):
+            inputItem = 'past tense verb'
         if bool(re.match('person', inputItem, re.I)):
             inputItem = '''person's name'''
             propername = True
