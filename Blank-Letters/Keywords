@@ -1,0 +1,18 @@
+Title:Key words for letters
+Lib_verb - Verb
+Lib_verbpast - Past Tense Verb (swam, ran)
+Lib_person - Person's Name (Steve, Peter)
+Lib_people - Type of person or job (Super Hero, garbage man)
+Lib_place - Place (Ciruit City, Blockbuster)
+Lib_thing - Thing (Record, Tape)
+Lib_job - Job (Army, Cook)
+Lib_date - Date (7/04/1776 - any format)
+Lib_number - Number (3256)
+Lib_animal - Animal (Mammoth, Dodo)
+Lib_animals - Plural animal
+Lib_noun - (person, place or thing)
+Lib_nouns - Plural noun
+Lib_adj - Adjective (Discribes a noun)
+Lib_adjective - Adjective
+
+   
