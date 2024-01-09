@@ -1,3 +1,5 @@
 # Ignore Outputs folder
 Outputs
+
+# Ignore pyc files
 *.pyc
