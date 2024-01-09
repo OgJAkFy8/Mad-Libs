@@ -3,12 +3,10 @@ from modules.madregexModule import modifyString
 import tkinter as tk
 from tkinter import messagebox
 
-
 # BEGIN
 # Variables
 stationaryPad = 'Blank-Letters'
 mailBox = 'Outputs'
-
 
 # Pop-up window for viewing the output
 def popup(message, title=None):
@@ -17,7 +15,6 @@ def popup(message, title=None):
     root.wm_attributes("-topmost", 1)
     messagebox.showinfo(title, message, parent=root)
     root.destroy()
-
 
 # PROCESS
 file_path, filename = Select_Letter(stationaryPad)
@@ -30,14 +27,9 @@ if(file_path != 'Blank-Letters/Keywords'):
     MsgPath, Message = Write_Letter(mailBox, filename, Letter)
     # END
     popup(Message, MsgPath)
-
 else:
     #print('else')
     f = open(file_path, 'r')
     t = f.read().split('\n')
     for i in range(0, (len(t))):
         print(t[i])
-
-
-    
-
