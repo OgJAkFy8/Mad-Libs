@@ -3,13 +3,13 @@ from modules.madregexModule import modifyString
 import tkinter as tk
 from tkinter import messagebox
 
+
 # BEGIN
 # Variables
 stationaryPad = 'Blank-Letters'
 mailBox = 'Outputs'
 
-<<<<<<< HEAD
-#def main():
+
 # BEGIN
 # Variables
 stationaryPad = 'Blank-Letters'
@@ -23,10 +23,11 @@ def popup(message, title=None):
     messagebox.showinfo(title, message, parent=root)
     root.destroy()
 
+
 # PROCESS
 file_path, filename = Select_Letter(stationaryPad)
 
-=======
+
 # Pop-up window for viewing the output
 def popup(message, title=None):
     root = tk.Tk()
@@ -38,7 +39,6 @@ def popup(message, title=None):
 # PROCESS
 file_path, filename = Select_Letter(stationaryPad)
 
->>>>>>> parent of 6974d67 (Update start_MadLibs.py)
 #print(filename)
 #print(file_path)
 if(file_path != 'Blank-Letters/Keywords'):
@@ -53,10 +53,4 @@ else:
     t = f.read().split('\n')
     for i in range(0, (len(t))):
         print(t[i])
-<<<<<<< HEAD
 
-
-#if __main__ == "__main__":
- #   main()
-=======
->>>>>>> parent of 6974d67 (Update start_MadLibs.py)

@@ -1,8 +1,3 @@
 # Ignore Outputs folder
 Outputs
-
-# Ignore Sketchpad folder
-Sketchpad
-
-# Ignore *.pyc files
 *.pyc
