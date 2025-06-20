@@ -41,11 +41,13 @@ def Select_Letter(dir_path):
     dir_path = validate_path(dir_path)
     file_list = os.listdir(dir_path)
     for i in range(len(file_list)):
-        print(str(i) + '. ' + file_list[i - 1])
+        print(str(i) + '. ' + file_list[i])  # Fixed index to print correct file
 
-    numSelection = eval(input("Enter number to select: "))
-    filename = file_list[int(numSelection) - 1]
-    file_path = dir_path + filename
+    numSelection = int(input("Enter number to select: "))
+    if numSelection < 0 or numSelection >= len(file_list):
+        raise ValueError("Invalid selection.")
+    filename = file_list[numSelection]
+    file_path = os.path.join(dir_path, filename)
     return file_path, filename
 
 
@@ -54,7 +56,8 @@ def Assemble_Letter(file_path, filename='None'):
     # Assignments
     key = set("$")
     i = 1
-    Message = letterAslist = []
+    Message = []  # Fixed: separate lists
+    letterAslist = []  # Fixed: separate lists
 
     try:  # trying the "try except" statement
         file_path = file_path.replace('\\', '/')
